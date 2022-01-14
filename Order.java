@@ -24,12 +24,10 @@ public class Order {
     
     for (int i = 0; i < orderedWords.length; i++) {
       
-      if (i == 0 && orderedWords[0] != null)
-        finalList = orderedWords[0];
-      else if (i > 0 && orderedWords[i] != null) 
+      if (orderedWords[i] != null) 
         finalList = finalList + " " + orderedWords[i];
       
     }
-    return finalList;
+    return finalList.trim();
   }
 }

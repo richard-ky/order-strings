@@ -28,9 +28,9 @@ public class Order {
       }        
     }
     
-    for (int i = 0; i < orderedWords.length; i++) {
-      if (orderedWords[i] != null) 
-        finalList = finalList + " " + orderedWords[i];
+    for (String str : orderedWords) {
+      if (str != null) 
+        finalList = finalList + " " + str;
     }
     
     return finalList.trim();
